@@ -1,17 +1,13 @@
 package com.teamtreehouse.techdegrees.model;
 
-/**
- * Created by GoranB on 2017-02-20.
- */
 public class Todo {
-
   private int id;
   private String name;
   private boolean completed;
 
   public Todo(String name) {
     this.name = name;
-
+    this.completed = false;
   }
 
   public int getId() {
@@ -37,7 +33,6 @@ public class Todo {
   public void setCompleted(boolean completed) {
     this.completed = completed;
   }
-
 
   @Override
   public boolean equals(Object o) {
